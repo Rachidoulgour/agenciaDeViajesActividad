@@ -220,9 +220,14 @@ body{
   color: rgb(2, 2, 51);
 }
 .quien h2:after{
+  content: "";
+  border-bottom: solid .4rem yellow;
   display: block;
-  color: yellow;
-  size: 5px;
+  width: 13rem;
+  padding-bottom: .5rem;
+}
+.quien p{
+  padding-top: 1.5rem;
 }
 .quien a{
   background-color: rgb(2, 2, 51);
@@ -249,11 +254,19 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 50%);
   margin: 0 8rem;
+  padding: 2rem 0;
 }
 form{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.mapa img{
+  padding-right: 2rem;
+  max-height: 60rem;
+}
+.formul{
+  padding-left: 2rem;
 }
 .campo{
   flex: 0 0 calc(50% - 1rem);
@@ -294,6 +307,9 @@ textarea{
   .copy{
     display: none;
   }
+  footer .social{
+    display: block;
+  }
 }
 footer{
   padding-top: 2rem;
@@ -303,9 +319,10 @@ footer{
 }
 footer .info{
   display: flex;
+  border-bottom: solid 1px black;
 }
 .ayuda{
-  flex: 3;
+  flex: 2.5;
   padding-left: 10rem;
 }
 .informacion{
@@ -335,5 +352,8 @@ footer h3{
 }
 .copy{
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+}
+footer .social{
+  display: none;
 }
