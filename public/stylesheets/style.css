@@ -1,8 +1,244 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+html {
+    box-sizing: border-box;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
-a {
-  color: #00B7FF;
+body{
+  /* overflow-x: hidden; */
+ 
+}
+.logo{
+  width: 15rem;;
+  justify-content: center;
+  
+}
+.logo h1{
+  
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin: auto;
+}
+.logo img{
+  width: 150px;
+}
+.social img{
+  width: 40px;
+}
+.head-bar{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 0.5em;
+  position: absolute;
+  width: 98%;
+}
+.barra a{
+  text-decoration: none;
+  color: #ffffff;
+  font-style: italic;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+.header .img-header img{
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.viajes{
+  position: absolute;
+  z-index: 1;
+  top: 150px;
+  right: 520px;
+}
+.viajes h1{
+  font-size: 5rem;
+  color: #ffffff;
+  margin-bottom: 0;
+
+}
+.viajes p{
+  font-size: 2rem;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.button-destinos{
+  color: #000000;
+  background-color: yellow;
+  padding: 10px;
+  border: none;
+  font-size: 2rem;
+  font-style: italic;
+  justify-items: center;
+  margin-top: 20px;
+}
+.button-destinos:hover{
+  padding: 1.5rem;
+  
+}
+.center-head{
+  text-align: center;
+}
+.destinos{
+  margin: 0 3rem 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  
+  
+
+  /* display: grid; 
+  grid-template-columns: repeat(3, 1fr); */
+  
+  
+}
+.ciudades{
+  /*width: 100%;*/
+  margin: 1rem;
+  position: relative;
+  z-index: -1;
+}
+.ciudades h3{
+  text-align: center;
+}
+.ciudades img{
+  max-width: 20rem;
+  
+}
+.ciudades p{
+  position: absolute;
+  /* left: 1rem; */
+  top: .05rem;
+  color: #ffffff;
+  background-color: rgb(2, 2, 51);
+  padding: 1rem 5rem 1rem 1rem;
+  margin-top: 0;
+}
+.ciudades span{
+  color: rgb(2, 2, 51);
+  background-color: yellow;
+  position: absolute;
+  padding: 1.5rem 1rem 1.5rem 2rem;
+  
+  font-size: 1.8rem;
+  font-weight: bold;
+  right: 0rem;
+  top: 0rem;
+}
+
+/*QUIEN SOMOS*/
+.quien-somos{
+  height: 100vh;
+  background-image: url(/images/quien-somos\ .jpg);
+  background-size: cover;
+}
+.quien{
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 20rem;
+  background-color: #ffffff;
+  margin: 10rem;
+  padding: 2rem 2rem;
+  text-align: justify;
+}
+
+.quien h2{
+  text-transform: uppercase;
+  color: rgb(2, 2, 51);
+}
+.quien h2:after{
+  display: block;
+  color: yellow;
+  size: 5px;
+}
+.quien a{
+  background-color: rgb(2, 2, 51);
+  color: yellow;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 2rem;
+  text-align: center;
+}
+.contacto{
+  margin: 2rem auto;
+  background-color: gainsboro;
+  
+}
+.contenedor-form{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin: 0 8rem;
+}
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.campo{
+  flex: 0 0 calc(50% - 1rem);
+  margin-bottom: 1rem;
+  /* display: flex; */
+}
+.formulario{
+  display: flex;
+  justify-content: space-between;
+}
+
+.campo input{
+  flex: 1;
+  width: 100%;
+}
+.w100{
+  flex: 0 0 100%;
+}
+textarea{
+  all: inherit;
+}
+/*FOOTER*/
+footer{
+  background-color: rgb(2, 2, 51);
+  color: #ffffff;
+  margin-bottom: 0;
+}
+footer .info{
+  display: flex;
+}
+.ayuda{
+  flex: 3;
+  padding-left: 10rem;
+}
+.informacion{
+  flex: 1;
+}
+.suscrebete{
+  flex: 2;
+}
+.suscrebete fieldset{
+  border: none;
+  padding: 0;
+}
+.suscrebete button{
+  all: none;
+  background-color: yellow;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+}
+.correo{
+  /* display: flex;
+  flex-direction: column; */
+}
+footer h3{
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+.copy{
+  text-align: center;
+  padding-bottom: 1rem;
 }
