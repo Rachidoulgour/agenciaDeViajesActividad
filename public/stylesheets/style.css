@@ -38,6 +38,19 @@ body{
   position: absolute;
   width: 98%;
 }
+@media (max-width:768px){
+  .head-bar{
+    background-color: rgb(2, 2, 51);
+  }
+  .barra {
+    display: flex;
+    flex-direction:column;
+  }
+  .social{
+    display: none;
+  }
+
+}
 .barra a{
   text-decoration: none;
   color: #ffffff;
@@ -90,12 +103,49 @@ body{
   flex-wrap: wrap;
   justify-content: center; 
   
-  
-
   /* display: grid; 
   grid-template-columns: repeat(3, 1fr); */
   
   
+}
+@media (max-width: 768px){
+  .slider{
+    display: block;
+    margin: 1rem 5rem;
+  }
+  .carousel-inner img{
+    position: relative;
+    z-index: -1;
+  }
+  .carousel-inner p{
+    position: absolute;
+    top: .05rem;
+    color: #ffffff;
+    background-color: rgb(2, 2, 51);
+    padding: 1rem 5rem 1rem 1rem;
+    margin-top: 0;
+  }
+  .carousel-inner span{
+    color: rgb(2, 2, 51);
+  background-color: yellow;
+  position: absolute;
+  padding: 1.5rem 1rem 1.5rem 2rem;
+  
+  font-size: 1.8rem;
+  font-weight: bold;
+  right: 0rem;
+  top: 0rem;
+  }
+  .carousel-inner h3{
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .ciudades{
+    display: none;
+  }
+}
+.slider{
+  display: none;
 }
 .ciudades{
   /*width: 100%;*/
@@ -132,6 +182,24 @@ body{
 }
 
 /*QUIEN SOMOS*/
+@media (max-width: 768px){
+  .quien-somos{
+    display:flex;
+    /* height: 100vh; */
+    background-color: rgb(105, 211, 238);
+    background-image: inherit!important;
+    justify-content: center;
+  }
+  .quien{
+    max-width: 60rem; 
+    margin: 5rem 2rem!important;
+    padding: 2rem 2rem;
+    text-align: justify;
+  }
+  .quien a{
+    margin-top: 1rem;
+  }
+}
 .quien-somos{
   height: 100vh;
   background-image: url(/images/quien-somos\ .jpg);
@@ -164,6 +232,13 @@ body{
   text-decoration: none;
   margin: 2rem;
   text-align: center;
+}
+
+/*CONTACTO*/
+@media (max-width: 768px){
+  .contacto{
+    display: none;
+  }
 }
 .contacto{
   margin: 2rem auto;
@@ -201,7 +276,27 @@ textarea{
   all: inherit;
 }
 /*FOOTER*/
+@media (max-width: 768px){
+  .info{
+    flex-direction: column;
+  }
+  .ayuda{
+    padding: 1rem 1rem!important;
+    
+  }
+  
+  .informacion{
+    display: none;
+  }
+  .suscrebete{
+    padding: 1rem 1rem;
+  }
+  .copy{
+    display: none;
+  }
+}
 footer{
+  padding-top: 2rem;
   background-color: rgb(2, 2, 51);
   color: #ffffff;
   margin-bottom: 0;
