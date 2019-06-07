@@ -2,11 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Agencia Viajes' });
-});
-router.get('/', function(req, res, next) {
-  res.render('layout', { title:'Agencia layout'});
-})
+
+router.get('/register', (req,res) => res.render('register.hbs'));
+router.get('/', (req,res) => res.render('index.hbs'));
+router.get('/login', (req,res) => res.render('login.hbs'));
+router.get('/recovery', (req,res) => res.render('recovery.hbs'));
 
 module.exports = router;
